@@ -1,0 +1,24 @@
+#program to print n even numbers with count and , seperator
+i/p=5
+o/p= 2,4,6,8,10
+
+#include<stdio.h>
+int main(){
+    int i,n,flag,count;
+    scanf("%d",&n);
+    i=1;
+    count=1;
+    while(count<=n){
+        if(i%2==0){
+            if(flag==0){
+                printf("%d",i);
+                flag=1;
+            }
+        else{
+            printf(",%d",i);
+        }
+        count++;
+        }
+        i++;
+    }
+}
