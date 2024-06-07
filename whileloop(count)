@@ -1,0 +1,22 @@
+#program print n even numbers
+
+input: 5
+output: 2 4 6 8 10 
+
+exp: here we use count(refers to a variable that is used to keep track of the number of times the loop has been executed.)
+Here it checks the even number and increment the vaule by 1 up to 5
+
+#include<stdio.h>
+int main(){
+    int i,n,count;
+    scanf("%d",&n);
+    i=1;
+    count=1;
+    while(count<=n){
+        if(i%2==0){
+            printf("%d ",i);
+            count++;
+        }
+        i++;
+    }
+}
