@@ -1,0 +1,33 @@
+Printing Stars '*' in Reverse Pyramid Shape
+
+Input Format
+Read n value
+Output Format
+Printing Stars '*' in Reverse Pyramid Shape
+
+Sample Input 0
+5
+Sample Output 0
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    * 
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int n,i,k,j;
+    scanf("%d",&n);
+    for(i=1;i<=n;i++){
+        for(j=1;j<i;j++){
+            printf(" ");
+        }for(k=1;k<=(n-i+1);k++){
+            printf("* ");
+        }printf("\n");
+    }
+    return 0;
+}
